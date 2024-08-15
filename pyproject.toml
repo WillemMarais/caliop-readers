@@ -1,0 +1,54 @@
+[build-system]
+requires = ["hatchling", "hatch-build-scripts"]
+build-backend = "hatchling.build"
+
+[project]
+name = "caliopreaders"
+description = "caliop-readers"
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+license = ""
+keywords = []
+authors = [
+  { name = "Willem Marais", email = "willem.marais@ssec.wisc.edu" }
+]
+classifiers = [
+  "Private :: Do Not Upload"
+]
+dependencies = [
+   "attrs",
+   "netcdf4",
+   "numpy<2.0",
+   "pandas",
+   "pytest",
+   "pyyaml",
+   "scipy",
+   "xarray",
+   "hatch-build-scripts"
+]
+dynamic = ["version"]
+
+[project.scripts]
+
+[tool.hatch.version]
+path = "src/caliopreaders/__about__.py"
+
+# Tell hatch that we can list dependencies like git+https://
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.envs.default]
+dependencies = [
+    "pytest"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/caliopreaders"]
+
+
+[[tool.hatch.build.hooks.build-scripts.scripts]]
+commands = [
+   "conda install pyhdf -c conda-forge -y"
+]
+artifacts = [
+]

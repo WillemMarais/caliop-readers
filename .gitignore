@@ -1,0 +1,33 @@
+build
+trash
+.vscode
+.env
+.*.code-workspace
+pyrightconfig.json
+# Mac files
+.DS_Store
+._.DS_Store
+# LaTeX files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.lb
+# Hidden files create by Textmate
+._*
+__pycache__
+*sublime*
+.ipynb_checkpoints
+*.so
+*.c
+sandbox
+# .gitmodules
+dask-worker-space
+*.code-workspace
+*.egg-info
+.eggs
+backup
+todo_*
+del_*

@@ -16,14 +16,6 @@ classifiers = [
   "Private :: Do Not Upload"
 ]
 dependencies = [
-   "attrs",
-   "netcdf4",
-   "numpy<2.0",
-   "pandas",
-   "pytest",
-   "pyyaml",
-   "scipy",
-   "xarray",
    "hatch-build-scripts"
 ]
 dynamic = ["version"]
@@ -48,7 +40,7 @@ packages = ["src/caliopreaders"]
 
 [[tool.hatch.build.hooks.build-scripts.scripts]]
 commands = [
-   "conda install pyhdf -c conda-forge -y"
+  "conda install pyhdf attrs netcdf4 'numpy<2' pandas pyyaml scipy xarray pooch -c conda-forge -y"
 ]
 artifacts = [
 ]

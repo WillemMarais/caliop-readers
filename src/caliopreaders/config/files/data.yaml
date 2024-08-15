@@ -1,0 +1,18 @@
+---
+path_dct:
+  local: $HOME/data/caliop-denoising
+base_url: https://ftp.ssec.wisc.edu/pub/willemm/caliop-denoising/files
+# The registry specifies the files that can be fetched
+registry:
+  "ACCP-ORACLES_Semi-SyntheticScene2016-09-18_ALL-rev01.mat": "md5:5ad1dbafcfeb43ddfb3542091ea7490e"
+  "CAL_LID_L0-Beta-V1-00.2016-09-18T13-30-00Z.hdf": "md5:9073754241c9991cd5edd033e157e369"
+  "CAL_LID_L0-Beta-V1-00.2016-09-18T13-30-00Z.nc": "md5:c690941df6efd98758ad88d02d89b07d"
+
+  "CAL_LID_L1-Standard-V4-10.2016-09-18T13-13-48ZD.hdf": "md5:e02a185d8ceb67ef189035c6be3dacc1"
+  "CAL_LID_L1-Standard-V4-10.2016-09-18T13-13-48ZD.nc": "md5:918fb122aae94ab325f9dd65a948431b"
+  "CAL_LID_L2_VFM-Standard-V4-10.2016-09-18T13-13-48ZD.hdf": "md5:995b027cee04c1f7e35e8022b8d29190"
+  "CAL_LID_L2_VFM-Standard-V4-10.2016-09-18T13-13-48ZD.nc": "md5:d8a7ac489a8f5d07b1a58dbd78989cdb"
+
+  "CAL_LID_L1-Standard-V4-10.2016-09-18T14-06-18ZN.hdf": "md5:4035b79e2d986b9257ae12846a703104"
+  "CAL_LID_L2_VFM-Standard-V4-10.2016-09-18T14-06-18ZN.hdf": "md5:33feedf5b33546366c49ecc447683c41"
+...

@@ -1,0 +1,18 @@
+---
+Readers:
+  CALIOPBase:
+    # Science digitizer count to photon count scaling
+    count_to_photon_count_scale_flt: 3.8238e-2  # 166.6666666667e-6
+    # The number of PMT dynodes
+    pmt_nr_dynodes_int: 13
+    # The PMT gain per dynode
+    pmt_dynode_gain_flt: 2.962
+  CALIOPlevel0:
+    skip_datasets:
+      - Profile_UTC_Time
+      - Backscatter_1064_Averaged
+      - Altitude_1064_Averaged
+  CALIOPlevel1B:
+    skip_datasets:
+      - Profile_UTC_Time
+...

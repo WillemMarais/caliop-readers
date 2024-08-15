@@ -13,7 +13,7 @@ conda env list \
 
 # Create environment
 # conda create --name caliop-readers "python<3.12" ndcctools pyhdf xarray netcdf4 pip cython -y -c conda-forge
-conda create --name caliop-readers "python<3.12" pip -y -c conda-forge
+conda create --name caliop-readers "python<3.12" pip jupyterlab -y -c conda-forge
 
 # Activate the cluster-hsrl-processing environment
 eval "$(conda shell.bash hook)"
@@ -23,5 +23,5 @@ conda activate caliop-readers
 miniconda_dirP=$(dirname $(dirname $(which python)))
 pip_fileP=${miniconda_dirP}/bin/pip
 
-# # # Install caliop-readers
-# ${pip_fileP} install -e ${SCRIPTPATH}
+# # Install caliop-readers
+${pip_fileP} install -e ${SCRIPTPATH}
